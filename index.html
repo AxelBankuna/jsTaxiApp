@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taxi App</title>
+</head>
+<body>
+<h1>Taxi App</h1>
+<h2 id="details"></h2>
+<form action="" id="taxiFare">
+    Driver: <input type="text" id="driver" placeholder="Driver's name">
+    Enter Route ID: <input type="text" id="taxiID" placeholder="eg. JHB - Germiston">
+    Enter taxi fare: <input type="number" id="fare" placeholder="Cost per passenger">
+    <button type="submit" id="fareButton" onclick="getFare(event)">Submit</button>
+</form>
+
+<form action="" id="calculate" style="display: none;">
+    Enter Amount: <input type="number" id="amount" placeholder="Amount paid">
+    Number of people: <input type="number" id="numOfPeople" placeholder="Number of contributors">
+    <button type="submit" onclick="getChange(event)">Submit</button>
+</form>
+<p id="profit"></p>
+<script src="taxi.js"></script>
+</body>
+</html>
